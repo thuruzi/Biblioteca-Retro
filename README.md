@@ -1,6 +1,6 @@
 # Biblioteca Retrô
 
-Sistema Web de Biblioteca de Jogos Retrô desenvolvido para atividade acadêmica de Programação Web.
+Sistema Web de Biblioteca de Jogos Retrô desenvolvido para atividade acadêmica de Programação II.
 
 O projeto permite cadastrar, listar, consultar, editar e excluir jogos retrô usando frontend separado do backend, API JSON em PHP puro e banco MySQL/MariaDB.
 
