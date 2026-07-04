@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Novo Jogo - Retro Library</title>
+    <link rel="stylesheet" href="css/cadastro.css?v=8">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a class="logo" href="index.html" aria-label="Retro Library">
+                <img src="assets/logo-biblioteca-jogos-retro.png" alt="Biblioteca de Jogos Retrô">
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="jogos.html">Jogos</a>
+                <a class="ativo" href="cadastro.html">Cadastrar Jogo</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+
+            <p class="feito">Feito para gamers.</p>
+        </aside>
+
+        <main class="conteudo">
+            <header class="cabecalho">
+                <div>
+                    <h1>Cadastrar Novo Jogo</h1>
+                    <p>Preencha os dados do jogo retrô</p>
+                </div>
+            </header>
+
+            <form id="formJogo" class="formulario">
+                <div class="linha">
+                    <div class="campo">
+                        <label for="titulo">Título <span>*</span></label>
+                        <input type="text" id="titulo" name="titulo" placeholder="Ex: Super Mario World" maxlength="150" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="plataforma">Plataforma <span>*</span></label>
+                        <select id="plataforma" name="plataforma" required>
+                            <option value="">Selecione uma plataforma</option>
+                            <option value="Arcade">Arcade</option>
+                            <option value="Atari 2600">Atari 2600</option>
+                            <option value="Game Boy">Game Boy</option>
+                            <option value="Game Boy Color">Game Boy Color</option>
+                            <option value="Mega Drive">Mega Drive</option>
+                            <option value="Neo Geo">Neo Geo</option>
+                            <option value="Nintendo">Nintendo</option>
+                            <option value="Nintendo 64">Nintendo 64</option>
+                            <option value="Nintendo Entertainment System">Nintendo Entertainment System</option>
+                            <option value="PlayStation">PlayStation</option>
+                            <option value="PlayStation 2">PlayStation 2</option>
+                            <option value="Super Nintendo">Super Nintendo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="genero">Gênero <span>*</span></label>
+                        <select id="genero" name="genero" required>
+                            <option value="">Selecione um gênero</option>
+                            <option value="Ação">Ação</option>
+                            <option value="Ação e Aventura">Ação e Aventura</option>
+                            <option value="Ação e Plataforma">Ação e Plataforma</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Beat em up">Beat em up</option>
+                            <option value="Corrida">Corrida</option>
+                            <option value="Labirinto">Labirinto</option>
+                            <option value="Luta">Luta</option>
+                            <option value="Plataforma">Plataforma</option>
+                            <option value="Puzzle">Puzzle</option>
+                            <option value="RPG">RPG</option>
+                            <option value="Run and Gun">Run and Gun</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="ano_lancamento">Ano de Lançamento <span>*</span></label>
+                        <input type="number" id="ano_lancamento" name="ano_lancamento" placeholder="Ex: 1990" min="1970" max="2026" required>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="desenvolvedora">Desenvolvedora <span>*</span></label>
+                    <input type="text" id="desenvolvedora" name="desenvolvedora" placeholder="Ex: Nintendo" maxlength="150" required>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao">Descrição <span>*</span></label>
+                    <textarea id="descricao" name="descricao" rows="6" placeholder="Descreva o jogo, sua história e características marcantes..." required></textarea>
+                </div>
+
+                <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+                <div class="acoes">
+                    <button class="botao botao-primario" type="submit">Salvar Jogo</button>
+                    <a class="botao botao-secundario" href="jogos.html">Voltar</a>
+                </div>
+            </form>
+
+            <footer>© 2026 Retro Library - Arthur Miguel Gonzaga da Fonseca.</footer>
+        </main>
+    </div>
+
+    <script src="js/apiService.js?v=2"></script>
+    <script src="js/cadastro.js?v=2"></script>
+</body>
+</html>

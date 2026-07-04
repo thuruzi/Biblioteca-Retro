@@ -1,0 +1,20 @@
+<svg width="210" height="78" viewBox="0 0 210 78" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Retro Library</title>
+  <desc id="desc">Logo da biblioteca de jogos retrô com controle e tipografia neon.</desc>
+  <rect x="1.5" y="1.5" width="207" height="75" rx="10.5" fill="#10142F" stroke="#4EF3C9" stroke-width="3"/>
+  <rect x="8" y="8" width="194" height="62" rx="7" fill="#1B1B3A"/>
+  <path d="M28 28h20c8.8 0 16 7.2 16 16v7c0 4.4-3.6 8-8 8h-4.6c-2.5 0-4.8-1.2-6.3-3.2L41 50H35l-4.1 5.8c-1.5 2-3.8 3.2-6.3 3.2H20c-4.4 0-8-3.6-8-8v-7c0-8.8 7.2-16 16-16Z" fill="#F7F7FF"/>
+  <path d="M28 28h20c8.8 0 16 7.2 16 16v7c0 4.4-3.6 8-8 8h-4.6c-2.5 0-4.8-1.2-6.3-3.2L41 50H35l-4.1 5.8c-1.5 2-3.8 3.2-6.3 3.2H20c-4.4 0-8-3.6-8-8v-7c0-8.8 7.2-16 16-16Z" stroke="#0A0D24" stroke-width="4"/>
+  <rect x="24" y="39" width="6" height="18" rx="1" fill="#1B1B3A"/>
+  <rect x="18" y="45" width="18" height="6" rx="1" fill="#1B1B3A"/>
+  <circle cx="50" cy="44" r="4" fill="#FF2E88"/>
+  <circle cx="58" cy="52" r="4" fill="#FFD166"/>
+  <circle cx="36" cy="23" r="3" fill="#4EF3C9"/>
+  <circle cx="44" cy="23" r="3" fill="#FF2E88"/>
+  <path d="M78 20h15c7.7 0 14 6.3 14 14v24h-9V34c0-2.8-2.2-5-5-5H87v29h-9V20Z" fill="#4EF3C9"/>
+  <path d="M111 20h30v9h-21v5h18v8h-18v7h21v9h-30V20Z" fill="#4EF3C9"/>
+  <path d="M145 20h34v9h-12v29h-10V29h-12v-9Z" fill="#4EF3C9"/>
+  <path d="M78 63h11v5H78v-5Zm14 0h23v5H92v-5Zm26 0h16v5h-16v-5Zm19 0h26v5h-26v-5Z" fill="#FFD166"/>
+  <text x="78" y="54" fill="#FF2E88" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="900" letter-spacing="1">LIBRARY</text>
+  <path d="M186 18h8v8h-8v-8Zm8 8h8v8h-8v-8Zm-8 8h8v8h-8v-8Zm8 8h8v8h-8v-8Z" fill="#FFD166"/>
+</svg>

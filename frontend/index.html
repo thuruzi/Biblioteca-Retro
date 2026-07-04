@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Library</title>
+    <link rel="stylesheet" href="css/index.css?v=8">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a class="logo" href="index.html" aria-label="Retro Library">
+                <img src="assets/logo-biblioteca-jogos-retro.png" alt="Biblioteca de Jogos Retrô">
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a class="ativo" href="index.html">Início</a>
+                <a href="jogos.html">Jogos</a>
+                <a href="cadastro.html">Cadastrar Jogo</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+
+            <p class="feito">Feito para gamers.</p>
+        </aside>
+
+        <main class="conteudo">
+            <section class="hero">
+                <div class="hero-texto">
+                    <span class="tag">Sistema Web Acadêmico</span>
+                    <h1>Biblioteca de Jogos Retrô</h1>
+                    <p>Cadastre, pesquise e organize clássicos dos consoles antigos em uma interface inspirada na estética arcade.</p>
+
+                    <div class="acoes-hero">
+                        <a class="botao botao-primario" href="jogos.html">Explorar biblioteca</a>
+                        <a class="botao botao-secundario" href="cadastro.html">Cadastrar jogo</a>
+                    </div>
+
+                </div>
+
+                <section class="carrossel" aria-label="Carrossel de jogos clássicos">
+                    <div class="carrossel-topo">
+                        <strong>Capas clássicas</strong>
+                        <span>Jogos que marcaram gerações</span>
+                    </div>
+                    <div class="carrossel-moldura">
+                        <div class="carrossel-faixa">
+                            <article class="slide">
+                                <img src="https://en.wikipedia.org/wiki/Special:FilePath/Super_Mario_64.png" alt="Capa oficial de Super Mario 64">
+                                <div>
+                                    <strong>Super Mario 64</strong>
+                                    <span>Nintendo 64 • 1996</span>
+                                </div>
+                            </article>
+                            <article class="slide">
+                                <img src="https://en.wikipedia.org/wiki/Special:FilePath/Final_Fantasy_VII_Box_Art.jpg" alt="Capa oficial de Final Fantasy VII">
+                                <div>
+                                    <strong>Final Fantasy VII</strong>
+                                    <span>PlayStation • 1997</span>
+                                </div>
+                            </article>
+                            <article class="slide">
+                                <img src="https://en.wikipedia.org/wiki/Special:FilePath/DMC1FrontCover.jpg" alt="Capa oficial de Devil May Cry">
+                                <div>
+                                    <strong>Devil May Cry</strong>
+                                    <span>PlayStation 2 • 2001</span>
+                                </div>
+                            </article>
+                            <article class="slide">
+                                <img src="https://archives.bulbagarden.net/media/upload/thumb/f/f5/Silver_EN_boxart.png/250px-Silver_EN_boxart.png" alt="Capa oficial de Pokémon Silver">
+                                <div>
+                                    <strong>Pokémon Silver</strong>
+                                    <span>Game Boy Color • 1999</span>
+                                </div>
+                            </article>
+                            <article class="slide" aria-hidden="true">
+                                <img src="https://en.wikipedia.org/wiki/Special:FilePath/Super_Mario_64.png" alt="">
+                                <div>
+                                    <strong>Super Mario 64</strong>
+                                    <span>Nintendo 64 • 1996</span>
+                                </div>
+                            </article>
+                            <article class="slide" aria-hidden="true">
+                                <img src="https://en.wikipedia.org/wiki/Special:FilePath/Final_Fantasy_VII_Box_Art.jpg" alt="">
+                                <div>
+                                    <strong>Final Fantasy VII</strong>
+                                    <span>PlayStation • 1997</span>
+                                </div>
+                            </article>
+                            <article class="slide" aria-hidden="true">
+                                <img src="https://en.wikipedia.org/wiki/Special:FilePath/DMC1FrontCover.jpg" alt="">
+                                <div>
+                                    <strong>Devil May Cry</strong>
+                                    <span>PlayStation 2 • 2001</span>
+                                </div>
+                            </article>
+                            <article class="slide" aria-hidden="true">
+                                <img src="https://archives.bulbagarden.net/media/upload/thumb/f/f5/Silver_EN_boxart.png/250px-Silver_EN_boxart.png" alt="">
+                                <div>
+                                    <strong>Pokémon Silver</strong>
+                                    <span>Game Boy Color • 1999</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section class="metricas" aria-live="polite">
+                <article>
+                    <span id="totalJogos">0</span>
+                    <p>Jogos cadastrados</p>
+                </article>
+                <article>
+                    <span id="totalPlataformas">0</span>
+                    <p>Plataformas</p>
+                </article>
+                <article>
+                    <span id="totalGeneros">0</span>
+                    <p>Gêneros</p>
+                </article>
+            </section>
+
+            <section class="atalhos-home" aria-label="Atalhos principais">
+                <a href="jogos.html">
+                    <strong>Consultar coleção</strong>
+                    <span>Use busca e filtros para encontrar jogos rapidamente.</span>
+                </a>
+                <a href="cadastro.html">
+                    <strong>Adicionar clássico</strong>
+                    <span>Inclua novos títulos com plataforma, gênero, ano e descrição.</span>
+                </a>
+                <a href="sobre.html">
+                    <strong>Sobre o trabalho</strong>
+                    <span>Veja a proposta acadêmica e as tecnologias utilizadas.</span>
+                </a>
+            </section>
+
+            <footer>© 2026 Retro Library - Arthur Miguel Gonzaga da Fonseca.</footer>
+        </main>
+    </div>
+
+    <script src="js/apiService.js?v=2"></script>
+    <script src="js/index.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Jogo - Retro Library</title>
+    <link rel="stylesheet" href="css/detalhes.css?v=8">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a class="logo" href="index.html" aria-label="Retro Library">
+                <img src="assets/logo-biblioteca-jogos-retro.png" alt="Biblioteca de Jogos Retrô">
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a class="ativo" href="jogos.html">Jogos</a>
+                <a href="cadastro.html">Cadastrar Jogo</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+
+            <p class="feito">Feito para gamers.</p>
+        </aside>
+
+        <main class="conteudo">
+            <a class="botao botao-secundario voltar-topo" href="jogos.html">Voltar</a>
+
+            <header class="cabecalho">
+                <div>
+                    <h1>Detalhes do Jogo</h1>
+                    <p id="mensagem">Buscando jogo...</p>
+                </div>
+                <div class="cabecalho-acoes">
+                    <button class="botao botao-editar" id="btnEditar" type="button">Editar</button>
+                    <button class="botao botao-primario" id="btnSalvar" type="submit" form="formJogo" hidden>Salvar alterações</button>
+                    <button class="botao botao-limpar" id="btnCancelar" type="button" hidden>Cancelar</button>
+                </div>
+            </header>
+
+            <section class="detalhe-card">
+                <div class="pixel-preview" aria-hidden="true">
+                    <span class="sol"></span>
+                    <span class="bloco"></span>
+                    <span class="personagem"></span>
+                </div>
+
+                <form id="formJogo" class="formulario">
+                    <input type="hidden" id="id" name="id">
+
+                    <div class="campo campo-titulo">
+                        <label for="titulo">Título</label>
+                        <input type="text" id="titulo" name="titulo" maxlength="150" required disabled>
+                    </div>
+
+                    <div class="grid-info">
+                        <div class="campo">
+                            <label for="plataforma">Plataforma</label>
+                            <select id="plataforma" name="plataforma" required disabled>
+                                <option value="">Selecione uma plataforma</option>
+                                <option value="Arcade">Arcade</option>
+                                <option value="Atari 2600">Atari 2600</option>
+                                <option value="Game Boy">Game Boy</option>
+                                <option value="Game Boy Color">Game Boy Color</option>
+                                <option value="Mega Drive">Mega Drive</option>
+                                <option value="Neo Geo">Neo Geo</option>
+                                <option value="Nintendo">Nintendo</option>
+                                <option value="Nintendo 64">Nintendo 64</option>
+                                <option value="Nintendo Entertainment System">Nintendo Entertainment System</option>
+                                <option value="PlayStation">PlayStation</option>
+                                <option value="PlayStation 2">PlayStation 2</option>
+                                <option value="Super Nintendo">Super Nintendo</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="genero">Gênero</label>
+                            <select id="genero" name="genero" required disabled>
+                                <option value="">Selecione um gênero</option>
+                                <option value="Ação">Ação</option>
+                                <option value="Ação e Aventura">Ação e Aventura</option>
+                                <option value="Ação e Plataforma">Ação e Plataforma</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="Beat em up">Beat em up</option>
+                                <option value="Corrida">Corrida</option>
+                                <option value="Labirinto">Labirinto</option>
+                                <option value="Luta">Luta</option>
+                                <option value="Plataforma">Plataforma</option>
+                                <option value="Puzzle">Puzzle</option>
+                                <option value="RPG">RPG</option>
+                                <option value="Run and Gun">Run and Gun</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="ano_lancamento">Ano de Lançamento</label>
+                            <input type="number" id="ano_lancamento" name="ano_lancamento" min="1970" max="2026" required disabled>
+                        </div>
+
+                        <div class="campo">
+                            <label for="desenvolvedora">Desenvolvedora</label>
+                            <input type="text" id="desenvolvedora" name="desenvolvedora" maxlength="150" required disabled>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" rows="6" required disabled></textarea>
+                    </div>
+                </form>
+            </section>
+
+            <footer>© 2026 Retro Library - Arthur Miguel Gonzaga da Fonseca.</footer>
+        </main>
+    </div>
+
+    <script src="js/apiService.js?v=2"></script>
+    <script src="js/detalhes.js?v=2"></script>
+</body>
+</html>

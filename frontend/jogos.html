@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Cadastrados - Retro Library</title>
+    <link rel="stylesheet" href="css/jogos.css?v=8">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a class="logo" href="index.html" aria-label="Retro Library">
+                <img src="assets/logo-biblioteca-jogos-retro.png" alt="Biblioteca de Jogos Retrô">
+            </a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a class="ativo" href="jogos.html">Jogos</a>
+                <a href="cadastro.html">Cadastrar Jogo</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+
+            <p class="feito">Feito para gamers.</p>
+        </aside>
+
+        <main class="conteudo">
+            <header class="cabecalho">
+                <div>
+                    <h1>Jogos Cadastrados</h1>
+                    <p id="mensagem">Carregando biblioteca...</p>
+                </div>
+                <div class="cabecalho-acoes">
+                    <a class="botao botao-primario" href="cadastro.html">Novo Jogo</a>
+                </div>
+            </header>
+
+            <section class="resumo-lista" aria-label="Resumo da biblioteca">
+                <article>
+                    <strong id="totalJogos">0</strong>
+                    <span>Total de jogos</span>
+                </article>
+                <article>
+                    <strong id="totalFiltrado">0</strong>
+                    <span>Exibidos na tabela</span>
+                </article>
+                <article>
+                    <strong id="anoMaisAntigo">-</strong>
+                    <span>Jogo mais antigo</span>
+                </article>
+            </section>
+
+            <section class="filtros" aria-label="Filtros da tabela">
+                <div class="campo-filtro campo-busca">
+                    <label for="busca">Buscar</label>
+                    <input type="search" id="busca" placeholder="Digite título, plataforma, gênero ou desenvolvedora">
+                </div>
+
+                <div class="campo-filtro">
+                    <label for="filtroPlataforma">Plataforma</label>
+                    <select id="filtroPlataforma">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+
+                <div class="campo-filtro">
+                    <label for="filtroGenero">Gênero</label>
+                    <select id="filtroGenero">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+
+                <button class="botao botao-secundario" id="btnLimparFiltros" type="button">Limpar filtros</button>
+            </section>
+
+            <section class="tabela-area">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Plataforma</th>
+                            <th>Gênero</th>
+                            <th>Ano</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela"></tbody>
+                </table>
+
+                <div class="estado-vazio" id="estadoVazio" hidden>
+                    <strong>Nenhum jogo encontrado</strong>
+                    <p>Altere os filtros ou cadastre um novo jogo para preencher a tabela.</p>
+                </div>
+            </section>
+
+            <footer>© 2026 Retro Library - Arthur Miguel Gonzaga da Fonseca.</footer>
+        </main>
+    </div>
+
+    <script src="js/apiService.js?v=2"></script>
+    <script src="js/jogos.js?v=2"></script>
+</body>
+</html>
